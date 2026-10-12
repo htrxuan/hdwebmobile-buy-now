@@ -64,7 +64,7 @@ final class HDBN_Core
         ?>
         <div class="notice notice-error is-dismissible">
             <p>
-                <?php esc_html_e('HDWebmobile Buy Now Button requires WooCommerce to be installed and active. The plugin has been deactivated.', 'hdwebmobile-buy-now'); ?>
+                <?php esc_html_e('HDWebmobile Buy Now requires WooCommerce to be installed and active. The plugin has been deactivated.', 'hdwebmobile-buy-now'); ?>
             </p>
         </div>
         <?php

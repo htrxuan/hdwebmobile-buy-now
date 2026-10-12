@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: HDWebmobile Buy Now Button
+ * Plugin Name: HDWebmobile Buy Now
  * Plugin URI: https://hdwebmobile.com/plugins/hdwebmobile-buy-now/
  * Description: Skip the cart with a direct Buy Now button -- price and quantity are always computed server-side from the real product, never accepted from the link.
  * Version: 1.0.0

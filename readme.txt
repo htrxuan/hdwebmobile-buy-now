@@ -1,4 +1,4 @@
-=== HDWebmobile Buy Now Button ===
+=== HDWebmobile Buy Now ===
 Contributors: htrxuan
 Donate link: https://paypal.me/htrxuan/20
 Tags: woocommerce, buy now, direct checkout, skip cart, conversion
@@ -14,10 +14,10 @@ Skip the cart with a direct Buy Now button -- price and quantity are always comp
 
 == Description ==
 
-HDWebmobile Buy Now Button adds a "Buy Now" button next to Add to Cart on simple products. Clicking it clears the cart, adds exactly that one product, and takes the customer straight to checkout.
+HDWebmobile Buy Now adds a "Buy Now" button next to Add to Cart on simple products. Clicking it clears the cart, adds exactly that one product, and takes the customer straight to checkout.
 
-= Why this plugin exists =
-Several competing "Buy Now" / "Direct Checkout" plugins built their skip-the-cart link with the quantity -- and in at least one case a price override for a "quick deal" variant -- taken directly from the URL's own query string and used verbatim when adding the item to the cart (CWE-20, Improper Input Validation). A shopper could edit that link to request an unintended quantity or otherwise manipulate the price the cart ended up charging.
+= Security by design =
+A common weakness in skip-the-cart tools is building the "buy now" link with the quantity -- and sometimes even a price override -- taken directly from the URL's own query string and used verbatim when adding the item to the cart (CWE-20, Improper Input Validation). A shopper could edit that link to request an unintended quantity or otherwise manipulate the price the cart ended up charging.
 
 This plugin's Buy Now link carries only a product id -- there is no quantity or price parameter in its request handling at all:
 

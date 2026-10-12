@@ -1,4 +1,4 @@
-# HDWebmobile Buy Now Button
+# HDWebmobile Buy Now
 
 Skip the cart with a direct Buy Now button -- price and quantity are always computed server-side from the real product, never accepted from the link.
 
