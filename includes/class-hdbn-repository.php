@@ -10,11 +10,10 @@ if (!defined('ABSPATH')) {
  * Settings and the ONLY place a Buy Now request is ever resolved into a real, purchasable
  * product.
  *
- * Several competing "Buy Now" / "Direct Checkout" plugins built their skip-the-cart link with
- * the quantity (and, in at least one case, a price override for a "quick deal" variant) taken
- * directly from the URL's own query string and used verbatim when adding the item to the cart
- * (CWE-20, Improper Input Validation). A shopper could edit that link to request a fractional
- * or zero quantity, or otherwise manipulate the price the cart ended up charging.
+ * The risk this guards against: a skip-the-cart link whose quantity (or a price override)
+ * is taken directly from the URL's own query string and used verbatim when adding the item to
+ * the cart (CWE-20, Improper Input Validation). A shopper could edit that link to request a
+ * fractional or zero quantity, or otherwise manipulate the price the cart ends up charging.
  *
  * This plugin's Buy Now link carries only a product id (and, for a variable product, a
  * variation id) -- there is no quantity or price parameter in its request surface at all.

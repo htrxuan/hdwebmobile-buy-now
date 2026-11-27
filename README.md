@@ -12,7 +12,7 @@ Adds a "Buy Now" button next to Add to Cart on simple products. Clicking it clea
 
 ## Why this plugin exists
 
-Several competing "Buy Now" / "Direct Checkout" plugins built their skip-the-cart link with the quantity -- and in at least one case a price override for a "quick deal" variant -- taken directly from the URL's own query string and used verbatim when adding the item to the cart (CWE-20, Improper Input Validation). A shopper could edit that link to request an unintended quantity or otherwise manipulate the price the cart ended up charging.
+A common flaw in "Buy Now" / direct-checkout plugins: building the skip-the-cart link with the quantity (or a price override) taken directly from the URL's own query string and used verbatim when adding the item to the cart (CWE-20, Improper Input Validation). A shopper could edit that link to request an unintended quantity, or otherwise manipulate the price the cart ends up charging.
 
 This plugin's Buy Now link carries only a product id -- there is no quantity or price parameter in its request handling at all:
 
